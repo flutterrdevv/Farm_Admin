@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "295808311362",
+    "project_id": "farm-sharing",
+    "storage_bucket": "farm-sharing.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:295808311362:android:f1782e9cf008bcc03b4ddb",
+        "android_client_info": {
+          "package_name": "com.example.farm_admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "295808311362-0okgab90t7l5bgpq5ntdidks8q7oe5no.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRKKy1Bw1HkuVPAux8wU9nOGfZu1aXexc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "295808311362-0okgab90t7l5bgpq5ntdidks8q7oe5no.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "295808311362-i2o3hn9h99n93fotibb7u7jne1h9nlfs.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.farm.farmSharing"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:295808311362:android:e1a183ce6f9936013b4ddb",
+        "android_client_info": {
+          "package_name": "com.example.farm_sharing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "295808311362-0okgab90t7l5bgpq5ntdidks8q7oe5no.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRKKy1Bw1HkuVPAux8wU9nOGfZu1aXexc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "295808311362-0okgab90t7l5bgpq5ntdidks8q7oe5no.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "295808311362-i2o3hn9h99n93fotibb7u7jne1h9nlfs.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.farm.farmSharing"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
