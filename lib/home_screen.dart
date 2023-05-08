@@ -1,4 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:farm_admin/add_banner_screen.dart';
+import 'package:farm_admin/banner_screen.dart';
 import 'package:farm_admin/categories_screen.dart';
 import 'package:farm_admin/helpers/constant.dart';
 import 'package:farm_admin/helpers/screen_navigation.dart';
@@ -53,6 +55,21 @@ class _HomeScreenState extends State<HomeScreen> {
                 trailing: GestureDetector(
                   child: const Icon(Icons.arrow_forward_ios_rounded,
                       weight: 40, size: 20),
+                ),
+              ),
+              ListTile(
+                onTap: () => changeScreen(context, const BannerScreen()),
+                title: const CustomText(
+                  text: 'Banners',
+                  weight: FontWeight.bold,
+                  size: 20,
+                ),
+                trailing: GestureDetector(
+                  child: const Icon(
+                    Icons.arrow_forward_ios_rounded,
+                    weight: 40,
+                    size: 23,
+                  ),
                 ),
               ),
               ListTile(
