@@ -82,7 +82,9 @@ class _AddBannerScreenState extends State<AddBannerScreen> {
                 height: 50,
               ),
               CRoundButton(
-                function: addBanner,
+                function: () => imagePath.isNotEmpty
+                    ? addBanner()
+                    : showSnackBar('Please select image', context),
                 text: 'Upload',
                 height: 50,
                 width: 300,

@@ -97,6 +97,7 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                                 )),
                             leading: CircleAvatar(
                               radius: 20,
+                              backgroundColor: white,
                               backgroundImage: data['imagePath'] != ''
                                   ? NetworkImage(data['imagePath'])
                                   : const NetworkImage(
