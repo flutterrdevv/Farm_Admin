@@ -4,6 +4,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:farm_admin/helpers/constant.dart';
 import 'package:farm_admin/widgets/custom_modal_progress_hud.dart';
 import 'package:farm_admin/widgets/custom_round_button.dart';
+import 'package:farm_admin/widgets/custom_textfield.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
@@ -19,6 +20,7 @@ class AddBannerScreen extends StatefulWidget {
 
 class _AddBannerScreenState extends State<AddBannerScreen> {
   ImagePicker picker = ImagePicker();
+  TextEditingController linkController = TextEditingController();
   bool isLoading = false;
   final FirebaseFirestore instance = FirebaseFirestore.instance;
   final FirebaseStorage storage = FirebaseStorage.instance;
@@ -81,6 +83,11 @@ class _AddBannerScreenState extends State<AddBannerScreen> {
               const SizedBox(
                 height: 50,
               ),
+              CustomTextField(
+                  hint: 'Link', label: 'Link', controller: linkController),
+              const SizedBox(
+                height: 50,
+              ),
               CRoundButton(
                 function: () => imagePath.isNotEmpty
                     ? addBanner()
@@ -107,6 +114,7 @@ class _AddBannerScreenState extends State<AddBannerScreen> {
           .doc('admin')
           .collection('banners')
           .add({
+        'url': linkController.text.trim(),
         'imagePath': '',
         'time': DateTime.now(),
       });
@@ -127,6 +135,7 @@ class _AddBannerScreenState extends State<AddBannerScreen> {
         setState(() {
           isLoading = false;
         });
+        linkController.clear();
         print('Update done.');
         showSnackBar('Banner Uploaded', context);
       });
